@@ -99,12 +99,8 @@
 		B9CA9AF11B6598A2008AEC68 /* TechnicalChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				B9CA9AF61B6598A2008AEC68 /* AppDelegate.h */,
-				B9CA9AF71B6598A2008AEC68 /* AppDelegate.m */,
-				B9CA9AF91B6598A2008AEC68 /* MasterViewController.h */,
-				B9CA9AFA1B6598A2008AEC68 /* MasterViewController.m */,
-				B9CA9AFC1B6598A2008AEC68 /* DetailViewController.h */,
-				B9CA9AFD1B6598A2008AEC68 /* DetailViewController.m */,
+				B9CA9B1C1B659C4F008AEC68 /* ViewControllers */,
+				B9CA9B1B1B659C3B008AEC68 /* AppDelegate */,
 				B9CA9AFF1B6598A2008AEC68 /* Main.storyboard */,
 				B9CA9B021B6598A2008AEC68 /* Images.xcassets */,
 				B9CA9B041B6598A2008AEC68 /* LaunchScreen.xib */,
@@ -137,6 +133,26 @@
 				B9CA9B101B6598A2008AEC68 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9CA9B1B1B659C3B008AEC68 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA9AF61B6598A2008AEC68 /* AppDelegate.h */,
+				B9CA9AF71B6598A2008AEC68 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B9CA9B1C1B659C4F008AEC68 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA9AF91B6598A2008AEC68 /* MasterViewController.h */,
+				B9CA9AFA1B6598A2008AEC68 /* MasterViewController.m */,
+				B9CA9AFC1B6598A2008AEC68 /* DetailViewController.h */,
+				B9CA9AFD1B6598A2008AEC68 /* DetailViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		FB87B78EB07FF1CC445FA044 /* Pods */ = {
