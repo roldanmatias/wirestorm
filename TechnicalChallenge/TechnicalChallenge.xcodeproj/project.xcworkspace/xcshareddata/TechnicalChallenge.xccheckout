@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>15F2F0EA-B611-45E5-8AA4-C4C59526F4F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TechnicalChallenge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>11D00781AAAA4657633647F24264ECE3A4E29DE1</key>
+		<string>https://github.com/roldanmatias/wirestorm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TechnicalChallenge/TechnicalChallenge.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>11D00781AAAA4657633647F24264ECE3A4E29DE1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/roldanmatias/wirestorm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>11D00781AAAA4657633647F24264ECE3A4E29DE1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>11D00781AAAA4657633647F24264ECE3A4E29DE1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wirestorm</string>
+		</dict>
+	</array>
+</dict>
+</plist>
