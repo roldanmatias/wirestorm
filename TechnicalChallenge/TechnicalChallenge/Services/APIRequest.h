@@ -12,6 +12,6 @@
 
 + (instancetype)manager;
 
--(void)requestWithEndpoint:(NSString *)endpoint andWithResponseBlock:(void (^)(NSInteger, NSData *, NSError*))responseBlock;
+- (void)requestWithEndpoint:(NSString *)endpoint andWithResponseBlock:(void (^)(NSInteger, NSData *, NSError*))responseBlock;
 
 @end

@@ -17,6 +17,8 @@
 		B9CA9B061B6598A2008AEC68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA9B041B6598A2008AEC68 /* LaunchScreen.xib */; };
 		B9CA9B121B6598A2008AEC68 /* TechnicalChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B111B6598A2008AEC68 /* TechnicalChallengeTests.m */; };
 		B9CA9B211B659CF0008AEC68 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B201B659CF0008AEC68 /* APIRequest.m */; };
+		B9CA9B241B659DDF008AEC68 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B231B659DDF008AEC68 /* Element.m */; };
+		B9CA9B271B659E4B008AEC68 /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B261B659E4B008AEC68 /* APIService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		B9CA9B111B6598A2008AEC68 /* TechnicalChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechnicalChallengeTests.m; sourceTree = "<group>"; };
 		B9CA9B1F1B659CF0008AEC68 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIRequest.h; path = Services/APIRequest.h; sourceTree = "<group>"; };
 		B9CA9B201B659CF0008AEC68 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIRequest.m; path = Services/APIRequest.m; sourceTree = "<group>"; };
+		B9CA9B221B659DDF008AEC68 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Element.h; path = Entity/Element.h; sourceTree = "<group>"; };
+		B9CA9B231B659DDF008AEC68 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Element.m; path = Entity/Element.m; sourceTree = "<group>"; };
+		B9CA9B251B659E4B008AEC68 /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIService.h; path = Services/APIService.h; sourceTree = "<group>"; };
+		B9CA9B261B659E4B008AEC68 /* APIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIService.m; path = Services/APIService.m; sourceTree = "<group>"; };
 		C8A0C2F7C649DF79FAE1ADE7 /* Pods-TechnicalChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechnicalChallenge/Pods-TechnicalChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		D4C0EC192A14AF54A4CC8363 /* Pods-TechnicalChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechnicalChallenge/Pods-TechnicalChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +169,8 @@
 		B9CA9B1D1B659C95008AEC68 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B9CA9B221B659DDF008AEC68 /* Element.h */,
+				B9CA9B231B659DDF008AEC68 /* Element.m */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -172,6 +180,8 @@
 			children = (
 				B9CA9B1F1B659CF0008AEC68 /* APIRequest.h */,
 				B9CA9B201B659CF0008AEC68 /* APIRequest.m */,
+				B9CA9B251B659E4B008AEC68 /* APIService.h */,
+				B9CA9B261B659E4B008AEC68 /* APIService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -320,6 +330,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CA9B241B659DDF008AEC68 /* Element.m in Sources */,
+				B9CA9B271B659E4B008AEC68 /* APIService.m in Sources */,
 				B9CA9AF81B6598A2008AEC68 /* AppDelegate.m in Sources */,
 				B9CA9AFB1B6598A2008AEC68 /* MasterViewController.m in Sources */,
 				B9CA9AF51B6598A2008AEC68 /* main.m in Sources */,

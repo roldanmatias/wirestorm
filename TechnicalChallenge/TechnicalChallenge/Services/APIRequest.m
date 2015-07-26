@@ -17,7 +17,7 @@
     return [[self alloc] init];
 }
 
--(void)requestWithEndpoint:(NSString *)endpoint andWithResponseBlock:(void (^)(NSInteger, NSData *, NSError*))responseBlock{
+- (void)requestWithEndpoint:(NSString *)endpoint andWithResponseBlock:(void (^)(NSInteger, NSData *, NSError*))responseBlock{
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
