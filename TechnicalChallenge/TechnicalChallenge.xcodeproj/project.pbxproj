@@ -16,6 +16,7 @@
 		B9CA9B031B6598A2008AEC68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CA9B021B6598A2008AEC68 /* Images.xcassets */; };
 		B9CA9B061B6598A2008AEC68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA9B041B6598A2008AEC68 /* LaunchScreen.xib */; };
 		B9CA9B121B6598A2008AEC68 /* TechnicalChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B111B6598A2008AEC68 /* TechnicalChallengeTests.m */; };
+		B9CA9B211B659CF0008AEC68 /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA9B201B659CF0008AEC68 /* APIRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		B9CA9B0B1B6598A2008AEC68 /* TechnicalChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechnicalChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CA9B101B6598A2008AEC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9CA9B111B6598A2008AEC68 /* TechnicalChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechnicalChallengeTests.m; sourceTree = "<group>"; };
+		B9CA9B1F1B659CF0008AEC68 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIRequest.h; path = Services/APIRequest.h; sourceTree = "<group>"; };
+		B9CA9B201B659CF0008AEC68 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIRequest.m; path = Services/APIRequest.m; sourceTree = "<group>"; };
 		C8A0C2F7C649DF79FAE1ADE7 /* Pods-TechnicalChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechnicalChallenge/Pods-TechnicalChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		D4C0EC192A14AF54A4CC8363 /* Pods-TechnicalChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnicalChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechnicalChallenge/Pods-TechnicalChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +102,8 @@
 		B9CA9AF11B6598A2008AEC68 /* TechnicalChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B9CA9B1E1B659C9F008AEC68 /* Services */,
+				B9CA9B1D1B659C95008AEC68 /* Entity */,
 				B9CA9B1C1B659C4F008AEC68 /* ViewControllers */,
 				B9CA9B1B1B659C3B008AEC68 /* AppDelegate */,
 				B9CA9AFF1B6598A2008AEC68 /* Main.storyboard */,
@@ -153,6 +158,22 @@
 				B9CA9AFD1B6598A2008AEC68 /* DetailViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9CA9B1D1B659C95008AEC68 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		B9CA9B1E1B659C9F008AEC68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA9B1F1B659CF0008AEC68 /* APIRequest.h */,
+				B9CA9B201B659CF0008AEC68 /* APIRequest.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		FB87B78EB07FF1CC445FA044 /* Pods */ = {
@@ -302,6 +323,7 @@
 				B9CA9AF81B6598A2008AEC68 /* AppDelegate.m in Sources */,
 				B9CA9AFB1B6598A2008AEC68 /* MasterViewController.m in Sources */,
 				B9CA9AF51B6598A2008AEC68 /* main.m in Sources */,
+				B9CA9B211B659CF0008AEC68 /* APIRequest.m in Sources */,
 				B9CA9AFE1B6598A2008AEC68 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
