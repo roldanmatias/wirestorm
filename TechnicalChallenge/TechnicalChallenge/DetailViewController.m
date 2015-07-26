@@ -7,8 +7,12 @@
 //
 
 #import "DetailViewController.h"
+#import "Element.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface DetailViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgDetail;
 
 @end
 
@@ -28,7 +32,9 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        
+        [self.imgDetail sd_setImageWithURL:[NSURL URLWithString:self.detailItem.lrgpic]
+                          placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+        self.navigationItem.title = self.detailItem.name;
     }
 }
 
