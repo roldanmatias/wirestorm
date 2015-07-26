@@ -8,10 +8,14 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "APIService.h"
+#import "Element.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
+@property NSArray *objects;
+
 @end
 
 @implementation MasterViewController
@@ -23,6 +27,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    __weak MasterViewController *weakSelf = self;
+    
+    [[APIService sharedInstance] getDataWithResponseBlock:^(NSArray *elements) {
+        weakSelf.objects = elements;
+        [weakSelf.tableView reloadData];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,9 +45,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        /*NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = self.objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setDetailItem:object];*/
     }
 }
 
@@ -48,14 +58,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return [self.objects count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Element *object = self.objects[indexPath.row];
+    cell.textLabel.text = object.name;
+    cell.detailTextLabel.text = object.position;
+    
+    [cell.imageView sd_setImageWithURL:[NSURL URLWithString:object.smallpic]
+                      placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    
     return cell;
 }
 
