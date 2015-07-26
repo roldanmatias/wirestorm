@@ -15,4 +15,3 @@
 @property (strong, nonatomic) Element *detailItem;
 
 @end
-
